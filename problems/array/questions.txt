@@ -1,0 +1,5 @@
+1. 2 Sum (Approach Hash map or dict, keep track if target - diff) *
+2. Merge sorted array (Keep track of last indexes) *
+3. Remove element from array (keep pointers, and replace inplace) *
+4. Remove duplicates from sorted array (Keep points, start both pointers from 1st index) *
+5. Remove duplicates from sorted array-II (Keep a window r,l pointers) *
