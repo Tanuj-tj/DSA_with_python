@@ -22,6 +22,24 @@ class ArrayMedium:
 
         return l
 
+
+    def rotate(self, nums: List[int], k: int) -> None:
+        k = k % len(nums)
+        def rotate_helper(start, end):
+            while start < end:
+                nums[start],nums[end] = nums[end], nums[start]
+                start += 1
+                end -= 1
+
+        # rotate the complete array
+        rotate_helper(0,len(nums)-1)
+
+        # Rotate the first kth elements
+        rotate_helper(0, k-1)
+
+        # Rotate the last kth elements
+        rotate_helper(k, len(nums)-1)
+
     
 
 if __name__ == "__main__":
